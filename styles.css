@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+:root{
+    --main-color: #0D0000;
+    --primary-color: #8C7B74;
+    --primary-text-color: #BFAEA8;
+    --secondary-color: #D9AF8B;
+    --secondary-text-color: #F2D6B3;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    background-color: var(--main-color);
+    height: 50vh;
+    width: 100%;
+}
+
+.header.article{
+    position: relative;
+    height: 65vh;
+}
+
+.titleLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+    margin-bottom: 50px;
+    position: sticky;        /* Sticky positioning */
+    top: 0; 
+}
+
+.title span{
+    color: var(--secondary-color);
+}
+
+.title, .login{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.login{
+    background-color: var(--secondary-color);
+    width: 6%;
+    border-radius: 6px;
+    font-size: 1rem;
+    
+}
+
+.headingMotto{
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+.motto.article a{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: all 300ms linear;
+} 
+
+.motto.article a:hover{
+    color: orange;
+}
+
+.navigationLinks{
+    background-color: white;
+    color: var(--main-color);
+    padding: 9px;
+}
+
+.navItems{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    list-style-type: none;
+    color: var(--main-color);
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 40px;
+}
+.navItems a {
+    color: #212121;
+    width: auto;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.navItems a:hover, .navItems a:active{
+    background-color: var(--secondary-color);
+    border-radius: 0.3rem;
+    color: white;
+    
+}
+
+div .img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+}
+
+.articleInfoImg{
+    width: 33vw;
+    height: 500px;
+    position: absolute;
+    left: 480px;
+    top: 300px;
+    border-radius: 8px;
+}
+
+.articleArticle{
+    width: 100%;
+    float: left;
+    color: var(--main-color);
+}
+
+.paraOne, .paraTwo, .paraThree{
+    float: left;
+    width: 460px;
+    height: 180px;
+    margin: 10px;
+}
+
+
+
+.img.one { background-image: url("./pic.jpg"); }
+.img.two { background-image: url("./pexels-jopwell-2422290.jpg"); }
+.img.three { background-image: url("./pexels-fauxels-3184418.jpg"); }
+.img.four { background-image: url("./pexels-jopwell-2422294.jpg"); }
+.img.five { background-image: url("./pexels-moose-photos-170195-1036623.jpg"); }
+.img.six { background-image: url("./pexels-nietjuh-796602.jpg"); }
+.img.seven { background-image: url("./pexels-olly-774909.jpg"); }
+.img.eight { background-image: url("./pexels-olly-927022.jpg"); }
+.img.nine { background-image: url("./pexels-olly-927451.jpg"); }
+
+.selecBlogItem{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 40px 80px;
+    color: var(--main-color);
+}
+
+.blogItem{
+    height: 520px;
+    padding: 15px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 250px 250px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #7b5b5b44;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.blogItem:hover{
+    transform: scale(1.05);
+}
+
+.detail{
+    padding-top: 12px;
+}
+
+.mobile{
+    font-weight: 500;
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+.blogItem h1{
+    font-style: normal;
+    font-weight: 500;
+    padding-bottom: 3px;;
+}
+
+.blogger {
+    height: auto;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+span.date {
+    font-style: normal;
+    font-weight: 300;
+    margin: 15px 0px 15px 0px;
+}
+.blogger .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid orange;
+    background-image: url("./pic.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blogger span {
+    font-size: 14px;
+    font-weight: 500;
+}
+.blogItem p{
+    padding: 5px 0px 8px 0px;
+    font-style: normal;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+
